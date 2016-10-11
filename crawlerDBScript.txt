@@ -1,0 +1,14 @@
+CREATE DATABASE IF NOT EXISTS crawler;
+
+USE crawler;
+
+
+
+
+DROP TABLE IF EXISTS `record`;
+
+CREATE TABLE `record` (
+  `RecordID` int(11) NOT NULL AUTO_INCREMENT,
+  `URL` text NOT NULL,
+  PRIMARY KEY (`RecordID`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
